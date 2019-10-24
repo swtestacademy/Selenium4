@@ -1,0 +1,20 @@
+plugins {
+    id 'java'
+}
+
+group 'com.swtestacademy'
+version '1.0-SNAPSHOT'
+
+sourceCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testCompile group: 'junit', name: 'junit', version: '4.12'
+    // https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java
+    compile group: 'org.seleniumhq.selenium', name: 'selenium-java', version: '4.0.0-alpha-3'
+    testCompile("io.github.bonigarcia:webdrivermanager:3.6.1")
+
+}
